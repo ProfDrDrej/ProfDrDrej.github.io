@@ -1,0 +1,26 @@
+body 
+{
+    background: #ffffff;
+    font-family: 'Impact';
+    {
+        h1 
+        {
+            text-align: center;
+            color: #1b8e41
+        }
+    }
+    ul { 
+        list-style-type: none;
+        padding: 0;
+}
+li {
+    text-align: center;
+    color: #50C878
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+}
