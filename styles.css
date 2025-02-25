@@ -15,24 +15,23 @@ h2 {
 
 .img-small {
   width: 30%;
-  padding: 20px ;
+  padding: 0 35%;
   align-items: center;
-  margin:auto;
+  margin-top: 2px;
   display: block;
   }
 #img-caption {
   text-align: center;
   padding-top: 10px
   }
-a {
+#tribute-link {
   text-align: center;
-  margin: auto;
-  display: block;
-  width: fit-content;
+margin: auto;
+display: block;
+width: fit-content;
 }
-.img-big {
-  width: 80%
-}
+
+
 .wall {
   font-size: 20px;
   margin-left: 50px;
