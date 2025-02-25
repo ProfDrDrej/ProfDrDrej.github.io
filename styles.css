@@ -28,9 +28,10 @@ a {
   text-align: center;
   margin: auto;
   display: block;
+  width: fit-content;
 }
 .img-big {
-  width: 100%
+  width: 80%
 }
 .wall {
   font-size: 20px;
