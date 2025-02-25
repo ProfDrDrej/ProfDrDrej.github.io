@@ -30,7 +30,9 @@ margin: auto;
 display: block;
 width: fit-content;
 }
-
+.img-big {
+  width: 100%; 
+}
 
 .wall {
   font-size: 20px;
