@@ -1,26 +1,25 @@
-body 
-{
-    background: #ffffff;
-    font-family: 'Impact';
-    {
-        h1 
-        {
-            text-align: center;
-            color: #1b8e41
-        }
+* {
+    background: rgb(30, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+}
+    h2 {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 30px;
     }
-    ul { 
-        list-style-type: none;
-        padding: 0;
-}
-li {
-    text-align: center;
-    color: #50C878
-}
-.center {
+
+    h1 {
+        text-align: center;
+        padding: 12px 0;
+        font-size: 50px;
+        padding-bottom: 3%;
+        }
+
+.my-photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-}
+    width: 100%;
 }
