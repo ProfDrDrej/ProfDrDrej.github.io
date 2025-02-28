@@ -1,5 +1,5 @@
 * {
-    background: rgb(30, 30, 30);
+    background: #36489c; 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
@@ -10,14 +10,22 @@
 h2 {
     padding-top: 3%;
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h1 {
     text-align: center;
     padding: 12px 0;
-    font-size: 3em;
+    font-size: 2em;
     padding-bottom: 3%;
+}
+
+h3 {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 2em;
+    padding-bottom: 3%;
+    padding-top: 4%;
 }
 
 .my-photo {
@@ -28,7 +36,80 @@ h1 {
     max-width: 600px; 
 }
 
+.info-box {
+    background: #162B45; 
+    border: 2px solid #1E3A5F; 
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 60%;
+    border-radius: 10px;
+}
 
+.info-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+}
+
+li {
+    list-style:square;
+    margin-bottom: 3%;
+    text-align: left;
+    padding: 4% 5%;
+    line-height: 1.7;
+}
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slide {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slide;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes slide {
+    from {left: 100%; opacity: 0.4} 
+    to {left: 0%; opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes slide {
+    from {left: 100%; opacity: 0.4} 
+    to {left: 0%; opacity: 1}
+}
+
+/* Media Queries für verschiedene Bildschirmgrößen */
 @media (max-width: 768px) {
     h2 {
         font-size: 1.5em;
