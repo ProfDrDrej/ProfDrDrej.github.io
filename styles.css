@@ -3,23 +3,48 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-    h2 {
-        padding-top: 3%;
-        text-align: center;
-        font-size: 30px;
-    }
 
-    h1 {
-        text-align: center;
-        padding: 12px 0;
-        font-size: 50px;
-        padding-bottom: 3%;
-        }
+h2 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 3em;
+    padding-bottom: 3%;
+}
 
 .my-photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 600px; 
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
 }
