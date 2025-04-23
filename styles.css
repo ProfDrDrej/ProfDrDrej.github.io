@@ -262,3 +262,34 @@ form#contactForm button[type="submit"]:hover {
         opacity: 1;
     }
 }
+.consent-box {
+    background-color: #2e3b5f;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 1.5em auto 0 auto;
+    font-size: 0.9em;
+    color: white;
+}
+
+.consent-box label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+.consent-text {
+    color: #FFD700;
+    line-height: 1.4;
+}
+
+.consent-link {
+    margin-top: 0.75em;
+    text-align: center;
+}
+
+.consent-link a {
+    color: white;
+    text-decoration: underline;
+    
+}
