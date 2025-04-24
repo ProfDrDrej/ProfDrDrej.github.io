@@ -1,3 +1,4 @@
+
 * {
     background: #36489c; 
     font-family: Arial, Helvetica, sans-serif;
@@ -67,10 +68,13 @@ span {
 }
 
 .slideshow-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-}
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+  }
 
 li {
     list-style:square;
@@ -221,47 +225,45 @@ form#contactForm button[type="submit"]:hover {
     border-radius: 10px;
     background: #1A2F50;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.slide-track {
-    display: flex;
-    width: calc(600px * 10); 
-    animation: scrollSlides 45s linear infinite;
-}
-
-.slideshow-loop:hover .slide-track {
-    animation-play-state: paused;
-    cursor: grab;
-}
-
-.slide-img {
-    width: 600px;
-    flex-shrink: 0;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/*  Animation für Endlosscroll */
-@keyframes scrollSlides {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-3000px);
-    }
-}
-.slideshow-loop {
     animation: fadeIn 1.5s ease-in-out;
     opacity: 0;
     animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(200px * 5 * 2); 
+    animation: scrollSlides 20s linear infinite;
+  }
+  
+  .slideshow-image {
+    width: 600px;
+    aspect-ratio: 16/9; 
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .slideshow-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  
+  @keyframes scrollSlides {
+    0% {
+      transform: translateX(0);
     }
-}
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
 .consent-box {
     background-color: #2e3b5f;
     padding: 1em;
@@ -293,3 +295,18 @@ form#contactForm button[type="submit"]:hover {
     text-decoration: underline;
     
 }
+.slide-track {
+    display: flex;
+    width: calc(200px * 10); /* 10 Bilder á 200px */
+    animation: scrollSlides 45s linear infinite;
+  }
+
+  @keyframes scrollSlides {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
